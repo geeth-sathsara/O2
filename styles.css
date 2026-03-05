@@ -17,11 +17,48 @@
   width: auto;
 }
 
-/* @media (max-width: 576px) {
-  .navbar-brand img {
-    height: 30px;
-  }
-} */
+.contact-card {
+        border: none;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 15px 35px rgba(2, 60, 133, 0.15);
+      }
+
+      .info-sidebar {
+        background-color: var(--accent-dark);
+        color: white;
+        padding: 40px;
+      }
+
+      .form-section {
+        background: #ffffff;
+        padding: 40px;
+      }
+
+      .form-control:focus {
+        border-color: var(--brand-primary);
+        box-shadow: 0 0 0 0.25rem rgba(1, 114, 176, 0.25);
+      }
+
+      .btn-custom {
+        background-color: var(--brand-primary);
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .btn-custom:hover {
+        background-color: var(--accent-dark);
+        color: white;
+        transform: translateY(-2px);
+      }
+
+      .form-label {
+        color: var(--accent-dark);
+        font-weight: 500;
+      }
 
 /* ═══════════════════════════════════════════
    02 IT Solutions — styles.css
@@ -32,14 +69,6 @@
 
 /* ─── TOKENS ─── */
 :root {
-  /* --bg:        #04060f;
-  --bg2:       #070c1a;
-  --bg3:       #0a1020;
-  --surface:   #0d1525;
-  --surface2:  #101c30;
-  --border:    rgba(69,194,219,0.12);
-  --border-hi: rgba(69,194,219,0.35); */
-
   --bg:        #023C85;
   --bg2:       #023C85;
   --bg3:       #0172B0;
@@ -70,6 +99,11 @@
   --r-pill: 100px;
 
   --ease: cubic-bezier(0.23, 1, 0.32, 1);
+
+  --light-cyan: #C3E7EF;
+    --dark-blue: #023C85;
+    --mid-blue: #0172B0;
+    --text-color: #333;
 }
 
 /* ─── RESET ─── */
