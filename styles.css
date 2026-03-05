@@ -1040,6 +1040,10 @@ body:has(a:hover) .cursor-follower, body:has(button:hover) .cursor-follower {
 }
 .flegal a:hover { color: var(--cyan); opacity: 1; }
 
+.font-size{
+  font-size: 21px;
+}
+
 
 /* ═══════════════════════════════
    RESPONSIVE
