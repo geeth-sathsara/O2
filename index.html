@@ -1,11 +1,730 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2nd</title>
-</head>
-<body>
-    <h1>2nd</h1>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>O2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Cabinet+Grotesk:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-bg-color">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="images/O2-logo.png"
+            alt="O2 Software Solutions"
+            height="40"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Careers</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Testimonials</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="d-block w-100"
+            src="images/slides/slide-a.png"
+            alt="First slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="images/slides/slide-b.png"
+            alt="Second slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="images/slides/slide-c.png"
+            alt="Third slide"
+          />
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- ============================ -->
+    <div>
+      <!-- NOISE OVERLAY -->
+      <div class="noise"></div>
+
+      <!-- CURSOR -->
+      <div class="cursor" id="cursor"></div>
+      <div class="cursor-follower" id="cursorFollower"></div>
+
+      <!-- ══════════════════════════════
+       ABOUT US
+  ══════════════════════════════ -->
+      <section id="about">
+        <div class="about-bg-grid"></div>
+        <div class="glow glow-tl"></div>
+        <div class="glow glow-br"></div>
+
+        <div class="container">
+          <!-- Section tag -->
+          <div class="tag reveal"><span class="tag-dot"></span> About Us</div>
+
+          <div class="about-layout">
+            <!-- Left: heading -->
+            <div class="about-left">
+              <h2 class="display-heading reveal">
+                We craft<br />
+                <em>digital</em><br />
+                <span class="stroke-text">experiences</span>
+              </h2>
+              <p class="about-desc reveal delay-1">
+                02 IT Solutions is a next-generation software studio. We design
+                and build products that are fast, beautiful, and built to last —
+                from concept to deployment.
+              </p>
+              <div class="about-cta reveal delay-2">
+                <a href="#services" class="btn-ghost"
+                  >Our Services <span>↓</span></a
+                >
+              </div>
+
+              <!-- Extra cards to fill space -->
+              <div class="about-extra reveal delay-3">
+                <div class="about-extra-card">
+                  <div class="aec-icon">🌏</div>
+                  <div class="aec-title">Global Reach</div>
+                  <div class="aec-text">
+                    Clients across Asia, Europe & beyond trust our solutions.
+                  </div>
+                </div>
+                <div class="about-extra-card">
+                  <div class="aec-icon">⚡</div>
+                  <div class="aec-title">Fast Delivery</div>
+                  <div class="aec-text">
+                    Agile sprints keep projects on track and on time, always.
+                  </div>
+                </div>
+                <div class="about-extra-card">
+                  <div class="aec-icon">🛡️</div>
+                  <div class="aec-title">Secure by Default</div>
+                  <div class="aec-text">
+                    Security baked in from day one — not an afterthought.
+                  </div>
+                </div>
+                <div class="about-extra-card">
+                  <div class="aec-icon">🔄</div>
+                  <div class="aec-title">Ongoing Support</div>
+                  <div class="aec-text">
+                    We stay with you post-launch — updates, fixes & growth.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: cards -->
+            <div class="about-right">
+              <!-- Big stat card -->
+              <div class="stat-hero reveal delay-1">
+                <div class="stat-hero-inner">
+                  <div class="stat-hero-num">
+                    02<span class="stat-dot">.</span>
+                  </div>
+                  <div class="stat-hero-label">IT Solutions</div>
+                  <div class="stat-hero-line"></div>
+                  <div class="stat-hero-sub">Version 1 — Est. 2022</div>
+                </div>
+                <div class="stat-grid">
+                  <div class="stat-box">
+                    <div class="stat-val">50<span>+</span></div>
+                    <div class="stat-key">Projects</div>
+                  </div>
+                  <div class="stat-box">
+                    <div class="stat-val">100<span>%</span></div>
+                    <div class="stat-key">Satisfaction</div>
+                  </div>
+                  <div class="stat-box">
+                    <div class="stat-val">3<span>+</span></div>
+                    <div class="stat-key">Years</div>
+                  </div>
+                  <div class="stat-box">
+                    <div class="stat-val">12<span>+</span></div>
+                    <div class="stat-key">Tech Stack</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Values row -->
+              <div class="value-chips reveal delay-2">
+                <span class="chip">Innovation</span>
+                <span class="chip">Quality First</span>
+                <span class="chip">Agile</span>
+                <span class="chip">Transparent</span>
+                <span class="chip">Client-First</span>
+              </div>
+
+              <!-- VM cards -->
+              <div class="vm-row reveal delay-3">
+                <div class="vm-card">
+                  <div class="vm-icon">🎯</div>
+                  <div class="vm-title">Vision</div>
+                  <div class="vm-text">
+                    Globally recognized partner empowering businesses through
+                    cutting-edge technology.
+                  </div>
+                </div>
+                <div class="vm-card">
+                  <div class="vm-icon">🚀</div>
+                  <div class="vm-title">Mission</div>
+                  <div class="vm-text">
+                    Delivering high-quality, scalable digital products that
+                    drive real business value.
+                  </div>
+                </div>
+                <div class="vm-card">
+                  <div class="vm-icon">🤝</div>
+                  <div class="vm-title">Integrity</div>
+                  <div class="vm-text">
+                    Full transparency and honesty in every project and
+                    partnership we take on.
+                  </div>
+                </div>
+                <div class="vm-card">
+                  <div class="vm-icon">⚡</div>
+                  <div class="vm-title">Excellence</div>
+                  <div class="vm-text">
+                    Every line of code and every pixel crafted with meticulous
+                    attention to detail.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════
+       SERVICES
+  ══════════════════════════════ -->
+      <section id="services">
+        <div class="services-bg"></div>
+        <div class="glow glow-center"></div>
+
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="tag"><span class="tag-dot"></span> What We Do</div>
+            <h2 class="display-heading center-text">
+              Our <em>core</em> <span class="stroke-text">services</span>
+            </h2>
+            <p class="section-sub">
+              End-to-end digital solutions tailored to your goals — concept to
+              deployment.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <div class="svc-card reveal delay-1" data-num="01">
+              <div class="svc-top">
+                <div class="svc-icon">🌐</div>
+                <div class="svc-num">01</div>
+              </div>
+              <h3 class="svc-name">Web Development</h3>
+              <p class="svc-desc">
+                Custom, responsive websites and web apps built with modern tech
+                for peak performance and scalability.
+              </p>
+              <div class="svc-footer">
+                <span class="svc-tag">HTML · CSS · JS</span>
+                <span class="svc-arrow">→</span>
+              </div>
+              <div class="svc-line"></div>
+            </div>
+
+            <div class="svc-card reveal delay-2" data-num="02">
+              <div class="svc-top">
+                <div class="svc-icon">🎨</div>
+                <div class="svc-num">02</div>
+              </div>
+              <h3 class="svc-name">UI/UX Design</h3>
+              <p class="svc-desc">
+                User-centric designs that combine bold aesthetics with smart
+                functionality — experiences people remember.
+              </p>
+              <div class="svc-footer">
+                <span class="svc-tag">Figma · Prototyping</span>
+                <span class="svc-arrow">→</span>
+              </div>
+              <div class="svc-line"></div>
+            </div>
+
+            <div class="svc-card reveal delay-3" data-num="03">
+              <div class="svc-top">
+                <div class="svc-icon">⚙️</div>
+                <div class="svc-num">03</div>
+              </div>
+              <h3 class="svc-name">Software Solutions</h3>
+              <p class="svc-desc">
+                Tailored systems that automate, optimize and transform business
+                operations end-to-end.
+              </p>
+              <div class="svc-footer">
+                <span class="svc-tag">Node · Python · APIs</span>
+                <span class="svc-arrow">→</span>
+              </div>
+              <div class="svc-line"></div>
+            </div>
+
+            <div class="svc-card reveal delay-1" data-num="04">
+              <div class="svc-top">
+                <div class="svc-icon">📱</div>
+                <div class="svc-num">04</div>
+              </div>
+              <h3 class="svc-name">Mobile Development</h3>
+              <p class="svc-desc">
+                Cross-platform apps delivering native-grade performance on iOS
+                and Android seamlessly.
+              </p>
+              <div class="svc-footer">
+                <span class="svc-tag">React Native · Flutter</span>
+                <span class="svc-arrow">→</span>
+              </div>
+              <div class="svc-line"></div>
+            </div>
+
+            <div class="svc-card reveal delay-2" data-num="05">
+              <div class="svc-top">
+                <div class="svc-icon">☁️</div>
+                <div class="svc-num">05</div>
+              </div>
+              <h3 class="svc-name">Cloud & DevOps</h3>
+              <p class="svc-desc">
+                Scalable cloud infra and CI/CD pipelines keeping your products
+                live, fast, and reliable 24/7.
+              </p>
+              <div class="svc-footer">
+                <span class="svc-tag">AWS · Docker · CI/CD</span>
+                <span class="svc-arrow">→</span>
+              </div>
+              <div class="svc-line"></div>
+            </div>
+
+            <div class="svc-card reveal delay-3" data-num="06">
+              <div class="svc-top">
+                <div class="svc-icon">🔒</div>
+                <div class="svc-num">06</div>
+              </div>
+              <h3 class="svc-name">Cybersecurity</h3>
+              <p class="svc-desc">
+                Comprehensive security audits and hardening to protect your
+                systems, data, and digital assets.
+              </p>
+              <div class="svc-footer">
+                <span class="svc-tag">Pen Testing · Audits</span>
+                <span class="svc-arrow">→</span>
+              </div>
+              <div class="svc-line"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════
+       CAREERS
+  ══════════════════════════════ -->
+      <section id="careers">
+        <div class="glow glow-tl"></div>
+        <div class="container">
+          <div class="careers-layout">
+            <div class="careers-left reveal">
+              <div class="tag"><span class="tag-dot"></span> Join the Team</div>
+              <h2 class="display-heading">
+                Shape<br />
+                <em>tomorrow</em><br />
+                <span class="stroke-text">with us.</span>
+              </h2>
+              <p class="about-desc">
+                We're always hunting for curious, driven people who love
+                building things that matter. No ego. Just craft.
+              </p>
+
+              <ul class="culture-list">
+                <li>
+                  <span class="cli-icon">✦</span> Remote-friendly, async-first
+                  culture
+                </li>
+                <li>
+                  <span class="cli-icon">✦</span> Real products. Real users.
+                  Real impact.
+                </li>
+                <li>
+                  <span class="cli-icon">✦</span> Learning budget for courses &
+                  conferences
+                </li>
+                <li>
+                  <span class="cli-icon">✦</span> Collaborative, ego-free team
+                  environment
+                </li>
+                <li>
+                  <span class="cli-icon">✦</span> Competitive pay + performance
+                  rewards
+                </li>
+              </ul>
+            </div>
+
+            <div class="careers-right reveal delay-2">
+              <div class="jobs-header">
+                <span class="jobs-count" id="jobsCount">5 Open Roles</span>
+                <span class="jobs-badge">Hiring Now</span>
+              </div>
+
+              <div class="job-item">
+                <div class="job-left">
+                  <div class="job-title">Frontend Developer</div>
+                  <div class="job-tags">
+                    <span class="jtag full">Full-Time</span>
+                    <span class="jtag eng">Engineering</span>
+                    <span class="jtag hot">🔥 Hot</span>
+                  </div>
+                </div>
+                <button class="job-apply">Apply</button>
+              </div>
+
+              <div class="job-item">
+                <div class="job-left">
+                  <div class="job-title">UI/UX Designer</div>
+                  <div class="job-tags">
+                    <span class="jtag full">Full-Time</span>
+                    <span class="jtag des">Design</span>
+                    <span class="jtag hot">🔥 Hot</span>
+                  </div>
+                </div>
+                <button class="job-apply">Apply</button>
+              </div>
+
+              <div class="job-item">
+                <div class="job-left">
+                  <div class="job-title">Backend Developer</div>
+                  <div class="job-tags">
+                    <span class="jtag full">Full-Time</span>
+                    <span class="jtag eng">Engineering</span>
+                  </div>
+                </div>
+                <button class="job-apply">Apply</button>
+              </div>
+
+              <div class="job-item">
+                <div class="job-left">
+                  <div class="job-title">Project Manager</div>
+                  <div class="job-tags">
+                    <span class="jtag contract">Contract</span>
+                    <span class="jtag ops">Operations</span>
+                  </div>
+                </div>
+                <button class="job-apply">Apply</button>
+              </div>
+
+              <div class="job-item">
+                <div class="job-left">
+                  <div class="job-title">QA Engineer</div>
+                  <div class="job-tags">
+                    <span class="jtag part">Part-Time</span>
+                    <span class="jtag eng">Engineering</span>
+                  </div>
+                </div>
+                <button class="job-apply">Apply</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════
+       TESTIMONIALS
+  ══════════════════════════════ -->
+      <section id="testimonials">
+        <div class="glow glow-br"></div>
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="tag"><span class="tag-dot"></span> Client Stories</div>
+            <h2 class="display-heading center-text">
+              Real <em>words</em> from<br />real
+              <span class="stroke-text">people</span>
+            </h2>
+          </div>
+
+          <div class="testi-track-wrap">
+            <div class="testi-track" id="testiTrack">
+              <div class="testi-card">
+                <div class="testi-quote">"</div>
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">
+                  02 IT Solutions delivered our e-commerce platform ahead of
+                  schedule. Their attention to detail and technical expertise is
+                  genuinely impressive. Communication was clear at every step.
+                </p>
+                <div class="testi-author">
+                  <div
+                    class="testi-avatar"
+                    style="
+                      background: linear-gradient(135deg, #0172b0, #45c2db);
+                    "
+                  >
+                    AS
+                  </div>
+                  <div>
+                    <div class="testi-name">Amal Silva</div>
+                    <div class="testi-role">CEO · ShopEasy Lanka</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testi-card">
+                <div class="testi-quote">"</div>
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">
+                  The UI/UX redesign transformed our app's user engagement
+                  completely. Intuitive, beautiful, and so thoughtfully
+                  executed. Highly recommend their design team to anyone.
+                </p>
+                <div class="testi-author">
+                  <div
+                    class="testi-avatar"
+                    style="
+                      background: linear-gradient(135deg, #45c2db, #0090bf);
+                    "
+                  >
+                    PK
+                  </div>
+                  <div>
+                    <div class="testi-name">Priya Kumar</div>
+                    <div class="testi-role">Product Lead · FinTech Startup</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testi-card">
+                <div class="testi-quote">"</div>
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">
+                  Professional, reliable, and wildly creative. They built our
+                  entire corporate portal in just 6 weeks. The codebase is clean
+                  and our dev team loves maintaining it.
+                </p>
+                <div class="testi-author">
+                  <div
+                    class="testi-avatar"
+                    style="
+                      background: linear-gradient(135deg, #023c85, #0172b0);
+                    "
+                  >
+                    MR
+                  </div>
+                  <div>
+                    <div class="testi-name">Mohamed Rasheed</div>
+                    <div class="testi-role">CTO · LogiTrack Systems</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testi-card">
+                <div class="testi-quote">"</div>
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">
+                  What set them apart was how deeply they understood our
+                  business goals — not just the brief. The solution actually
+                  solved real problems for our customers. Impressive.
+                </p>
+                <div class="testi-author">
+                  <div
+                    class="testi-avatar"
+                    style="
+                      background: linear-gradient(135deg, #0e677c, #45c2db);
+                    "
+                  >
+                    NF
+                  </div>
+                  <div>
+                    <div class="testi-name">Nadeesha Fernando</div>
+                    <div class="testi-role">Director · EduTech Solutions</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testi-card">
+                <div class="testi-quote">"</div>
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">
+                  Their cloud migration saved us 40% on infrastructure costs.
+                  Knowledgeable, responsive, and they genuinely care about the
+                  outcome. A long-term partner for us without question.
+                </p>
+                <div class="testi-author">
+                  <div
+                    class="testi-avatar"
+                    style="
+                      background: linear-gradient(135deg, #0090bf, #023c85);
+                    "
+                  >
+                    TJ
+                  </div>
+                  <div>
+                    <div class="testi-name">Tharaka Jayawardena</div>
+                    <div class="testi-role">Head of IT · RetailCo</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testi-controls">
+              <button class="tctl-btn" id="tPrev">←</button>
+              <div class="tctl-dots" id="tDots"></div>
+              <button class="tctl-btn" id="tNext">→</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+      <footer id="footer">
+        <div class="footer-top-line"></div>
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <div class="footer-logo"><span>02</span> IT Solutions</div>
+              <p class="footer-tagline">
+                Building next-generation digital solutions that empower
+                businesses and create real-world impact.
+              </p>
+              <div class="footer-socials">
+                <a href="#" class="fsoc" aria-label="LinkedIn">in</a>
+                <a href="#" class="fsoc" aria-label="X">𝕏</a>
+                <a href="#" class="fsoc" aria-label="GitHub">⌥</a>
+                <a href="#" class="fsoc" aria-label="Dribbble">◉</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="footer-col-title">Company</div>
+              <ul class="footer-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="footer-col-title">Services</div>
+              <ul class="footer-links">
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">UI/UX Design</a></li>
+                <li><a href="#">Software Solutions</a></li>
+                <li><a href="#">Mobile Apps</a></li>
+                <li><a href="#">Cloud & DevOps</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="footer-col-title">Contact</div>
+              <div class="fcontact">
+                <span class="fcon-ico">✉</span> hello@02itsolutions.com
+              </div>
+              <div class="fcontact">
+                <span class="fcon-ico">☎</span> +94 77 000 0000
+              </div>
+              <div class="fcontact">
+                <span class="fcon-ico">⌖</span> Colombo, Sri Lanka
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <div class="fcopy">
+              © 2026 <strong>02 IT Solutions</strong>. All rights reserved.
+            </div>
+            <div class="flegal">
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
+              <a href="#">Cookies</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- ============================ -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
 </html>
