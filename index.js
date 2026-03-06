@@ -43,74 +43,74 @@ const revealObserver = new IntersectionObserver(
 revealEls.forEach(el => revealObserver.observe(el));
 
 // ── Testimonials Slider ─────────────────────
-const track     = document.getElementById('testiTrack');
-const dotsWrap  = document.getElementById('tDots');
-const cards     = Array.from(track.querySelectorAll('.testi-card'));
-let current     = 0;
-let autoTimer   = null;
+// const track     = document.getElementById('testiTrack');
+// const dotsWrap  = document.getElementById('tDots');
+// const cards     = Array.from(track.querySelectorAll('.testi-card'));
+// let current     = 0;
+// let autoTimer   = null;
 
-function getVisible() {
-  const w = window.innerWidth;
-  if (w < 768)  return 1;
-  if (w < 1024) return 2;
-  return 3;
-}
+// function getVisible() {
+//   const w = window.innerWidth;
+//   if (w < 768)  return 1;
+//   if (w < 1024) return 2;
+//   return 3;
+// }
 
-function buildDots() {
-  dotsWrap.innerHTML = '';
-  const total = Math.ceil(cards.length / getVisible());
-  for (let i = 0; i < total; i++) {
-    const d = document.createElement('button');
-    d.className = 'tdot' + (i === 0 ? ' active' : '');
-    d.setAttribute('aria-label', `Slide ${i + 1}`);
-    d.addEventListener('click', () => slideTo(i * getVisible()));
-    dotsWrap.appendChild(d);
-  }
-}
+// function buildDots() {
+//   dotsWrap.innerHTML = '';
+//   const total = Math.ceil(cards.length / getVisible());
+//   for (let i = 0; i < total; i++) {
+//     const d = document.createElement('button');
+//     d.className = 'tdot' + (i === 0 ? ' active' : '');
+//     d.setAttribute('aria-label', `Slide ${i + 1}`);
+//     d.addEventListener('click', () => slideTo(i * getVisible()));
+//     dotsWrap.appendChild(d);
+//   }
+// }
 
-function updateDots() {
-  const dots = dotsWrap.querySelectorAll('.tdot');
-  const idx  = Math.round(current / getVisible());
-  dots.forEach((d, i) => d.classList.toggle('active', i === idx));
-}
+// function updateDots() {
+//   const dots = dotsWrap.querySelectorAll('.tdot');
+//   const idx  = Math.round(current / getVisible());
+//   dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+// }
 
-function slideTo(idx) {
-  const max = cards.length - getVisible();
-  current = Math.max(0, Math.min(idx, max));
-  const cardW = cards[0].offsetWidth + 20;
-  track.style.transform = `translateX(-${current * cardW}px)`;
-  updateDots();
-}
+// function slideTo(idx) {
+//   const max = cards.length - getVisible();
+//   current = Math.max(0, Math.min(idx, max));
+//   const cardW = cards[0].offsetWidth + 20;
+//   track.style.transform = `translateX(-${current * cardW}px)`;
+//   updateDots();
+// }
 
-function next() {
-  const nextIdx = current + getVisible();
-  slideTo(nextIdx < cards.length ? nextIdx : 0);
-}
+// function next() {
+//   const nextIdx = current + getVisible();
+//   slideTo(nextIdx < cards.length ? nextIdx : 0);
+// }
 
-function prev() {
-  const prevIdx = current - getVisible();
-  slideTo(prevIdx >= 0 ? prevIdx : Math.max(0, cards.length - getVisible()));
-}
+// function prev() {
+//   const prevIdx = current - getVisible();
+//   slideTo(prevIdx >= 0 ? prevIdx : Math.max(0, cards.length - getVisible()));
+// }
 
-document.getElementById('tNext').addEventListener('click', () => { next(); resetAuto(); });
-document.getElementById('tPrev').addEventListener('click', () => { prev(); resetAuto(); });
+// document.getElementById('tNext').addEventListener('click', () => { next(); resetAuto(); });
+// document.getElementById('tPrev').addEventListener('click', () => { prev(); resetAuto(); });
 
-function startAuto() {
-  autoTimer = setInterval(next, 5000);
-}
+// function startAuto() {
+//   autoTimer = setInterval(next, 5000);
+// }
 
-function resetAuto() {
-  clearInterval(autoTimer);
-  startAuto();
-}
+// function resetAuto() {
+//   clearInterval(autoTimer);
+//   startAuto();
+// }
 
-buildDots();
-startAuto();
+// buildDots();
+// startAuto();
 
-window.addEventListener('resize', () => {
-  buildDots();
-  slideTo(0);
-});
+// window.addEventListener('resize', () => {
+//   buildDots();
+//   slideTo(0);
+// });
 
 // ── Touch / Swipe for Slider ────────────────
 let touchStartX = 0;
