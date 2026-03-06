@@ -10,6 +10,10 @@
     color: #ffffff !important;
 }
 
+.text-color{
+    color: #ffffff !important;
+}
+
 .navbar-brand img {
   display: inline-block;
   vertical-align: middle;
@@ -1068,7 +1072,7 @@ body:has(a:hover) .cursor-follower, body:has(button:hover) .cursor-follower {
 .flegal { display: flex; gap: 20px; }
 .flegal a {
   font-size: 0.75rem;
-  color: var(--text-mute);
+  /* color: var(--text-mute); */
   opacity: 0.6;
   transition: color 0.2s, opacity 0.2s;
 }
