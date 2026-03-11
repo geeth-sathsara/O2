@@ -1094,7 +1094,7 @@ body:has(a:hover) .cursor-follower, body:has(button:hover) .cursor-follower {
   .testi-card { min-width: calc(50% - 10px); }
 }
 
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
   .container { padding: 0 24px; }
   #about, #services, #careers, #testimonials { padding: 80px 0; }
   .services-grid { grid-template-columns: 1fr; }
@@ -1114,4 +1114,4 @@ body:has(a:hover) .cursor-follower, body:has(button:hover) .cursor-follower {
   .navbar-brand img {
     height: 30px;
   }
-}
+} 
